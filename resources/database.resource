@@ -9,7 +9,7 @@ Connect to Postgres
     ...                    ernhrcxj	
     ...                    ernhrcxj		
     ...                    9m9vBibhjRs8VNRmp3KecbSUeQM3rC64	
-    ...                    babar.db.elephantsql.comm	
+    ...                    babar.db.elephantsql.com	
     ...                    5432
 
 Select Student Where Email

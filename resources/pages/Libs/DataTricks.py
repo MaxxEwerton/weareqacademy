@@ -6,8 +6,8 @@ class DataTricks():
     def get_start_date(self):
         today = date.today()
 
-        # mm/dd/yyyy
-        fdate = today.strftime('%m%d%Y')
+        # dd/mm/yyyy
+        fdate = today.strftime('%d%m%Y')
 
         print(fdate)
 

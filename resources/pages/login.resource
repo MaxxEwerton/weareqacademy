@@ -10,7 +10,7 @@ Go to Login Page
 Fill Credentiais
     [Arguments]    ${email}    ${pass}
     Fill Text    css=input[placeholder='Seu e-mail']    ${email}
-    Fill Text    css=input[placeholder='Sua Senha']    ${pass}
+    Fill Text    css=input[placeholder='Sua Senha']     ${pass}
 
 Submit Credentiais
     Click    css=button >> text=Entrar no sistema

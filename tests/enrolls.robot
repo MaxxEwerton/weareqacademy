@@ -8,7 +8,7 @@ Resource            ../resources/base.resource
 *** Test Cases ***
 Deve matricular um aluno
 
-    ${admin}    Get Fixtures    admin
+    ${admin}    Get Fixtures   admin
     ${student}  Get Fixtures   student
 
     Reset Student Enroll     ${student}[email]   

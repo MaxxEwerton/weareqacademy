@@ -3,7 +3,6 @@ Documentation       Keyword que representam a página de cadastro de matricula
 
 Library             Browser
 Library             libs/DataTricks.py
-Library    SeleniumLibrary
 
 
 *** Keywords ***
@@ -15,19 +14,19 @@ Go to Enrolls Form
 
 Select Student
     [Arguments]    ${student_name}
-    Fill Text    xpath=//div[contains(text(), "nome do aluno")]/..//input
-    ...    ${student_name}
+    Fill Text      xpath=//div[contains(text(), "nome do aluno")]/..//input
+    ...            ${student_name}
 
-    Click    css=div[class$=option] >> text=${student_name}
+    Click          css=div[class$=option] >> text=${student_name}
 
 Select Plan
     [Arguments]    ${plan_name}
-    Click    xpath=//label[text()="PLANO"]/..//div[contains(text(), "Selecione")]
+    Click          xpath=//label[text()="PLANO"]/..//div[contains(text(), "Selecione")]
 
-    Click    css=div[class$=option] >> text=${plan_name}
+    Click          css=div[class$=option] >> text=${plan_name}
 
 Fill Start Date
-    Focus    css=input[name=start_date]
+    Focus          css=input[name=start_date]
 
     ${start_date}    Get Start Date
 
@@ -36,5 +35,4 @@ Fill Start Date
     END
 
 Submit Enroll Form
-    Click    css=button >> text=Salvar
-    
+    Click          css=button >> text=Salvar

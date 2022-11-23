@@ -22,7 +22,7 @@ Do Login
 
 Get Fixtures
     [Arguments]    ${fixture_file}
-    ${fixture}    Load Json From File    ${EXECDIR}/resource/fixtures/${fixture_file}.json
+    ${fixture}    Load Json From File    ${EXECDIR}/resources/fixtures/${fixture_file}.json
     ...                                  encoding=UTF-8
 
     [return]       ${fixture}    
