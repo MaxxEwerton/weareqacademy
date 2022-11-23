@@ -3,6 +3,7 @@ Documentation       Keyword que representam a página de cadastro de matricula
 
 Library             Browser
 Library             libs/DataTricks.py
+Library    SeleniumLibrary
 
 
 *** Keywords ***
@@ -33,3 +34,7 @@ Fill Start Date
     FOR    ${number}    IN    @{start_date}
         Keyboard Key    press    ${number}
     END
+
+Submit Enroll Form
+    Click    css=button >> text=Salvar
+    

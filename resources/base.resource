@@ -4,7 +4,12 @@ Documentation       Aqui onde ficará as resources
 Resource            components/navbar.resource
 Resource            components/toast.resource
 Resource            pages/login.resource
+Resource            pages/enroll.resource
 
+Resource            database.resource
+
+Library             Browser
+Library             JSONLibrary
 
 *** Keywords ***
 #Helpers
@@ -14,3 +19,10 @@ Do Login
     Fill Credentiais    ${user}[email]    ${user}[pass]
     Submit Credentiais
     User Should be Looged In    ${user}[name]
+
+Get Fixtures
+    [Arguments]    ${fixture_file}
+    ${fixture}    Load Json From File    ${EXECDIR}/resource/fixtures/${fixture_file}.json
+    ...                                  encoding=UTF-8
+
+    [return]       ${fixture}    
