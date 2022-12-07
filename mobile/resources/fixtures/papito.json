@@ -1,0 +1,10 @@
+{
+    "student":{
+        "name": "Fernando Papito",
+        "email":"papito@smartbit.com",
+        "age": "39",
+        "feet_tall": 1.70,
+        "weight": 95
+    },
+    "help": "Como faço para ganhar massa muscular?"
+}
