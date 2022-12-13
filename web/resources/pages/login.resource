@@ -6,6 +6,7 @@ Library     Browser
 Go to Login Page
     New Browser    headless=false    browser=chromium
     New Page    http://localhost:3000
+    Set Viewport Size    1200    720
 
 Fill Credentiais
     [Arguments]    ${email}    ${password}

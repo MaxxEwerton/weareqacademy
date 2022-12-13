@@ -4,6 +4,7 @@ Documentation       Suite de testes de login do Administrador
 
 Resource            ../resources/base.resource
 
+Test Teardown    Take Screenshot
 
 *** Test Cases ***
 Login do Administrador
