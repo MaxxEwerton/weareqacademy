@@ -7,10 +7,10 @@ Library    Browser
 Open Notifications
     Click       xpath=(//aside//button)[1]
 
-NOtification Should Be
+Notification Should Be
     [Arguments]    ${text}
 
-    ${elements}    Set Variable    css=.scrollbar-container p     
+    ${elements}    Set Variable    css=.scrollbar-container p
 
     Wait For Elements State    ${elements}
     ...                        visible

@@ -4,6 +4,7 @@ Documentation       Aqui onde ficará as resources
 Resource            components/navbar.resource
 Resource            components/toast.resource
 Resource            components/notification.resource
+Resource            components/field_question.resource
 Resource            pages/login.resource
 Resource            pages/enroll.resource
 

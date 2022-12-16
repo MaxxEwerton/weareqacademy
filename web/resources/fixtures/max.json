@@ -1,0 +1,13 @@
+{
+    "student": {
+        "feet_tall": 1.85,
+        "weight": 890,
+        "age": 27,
+        "email": "maxewerton@bol.com.br",
+        "name": "Max Ewerton"
+    },
+    "enroll": {
+        "plan": "Ultimate"
+    },
+    "question": "Como faço para perder peso de forma rápido?"
+}
